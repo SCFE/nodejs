@@ -6,7 +6,7 @@ var express = require('express'),
 
 
 app
-// .use(cookieParser())
+    .use(cookieParser())
     .use(cookieSession({ secret: "secreto" }))
 
 .get('/', (req, res) => {
